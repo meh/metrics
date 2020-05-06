@@ -1,0 +1,21 @@
+[package]
+name = "metrics-exporter-tracing"
+version = "0.1.0"
+authors = ["Toby Lawrence <toby@nuclearfurnace.com>", "meh. <meh@schizofreni.co"]
+edition = "2018"
+
+license = "MIT"
+
+description = "A metrics-core compatible exporter for forwarding metrics to tracing."
+homepage = "https://github.com/metrics-rs/metrics"
+repository = "https://github.com/metrics-rs/metrics"
+documentation = "https://docs.rs/metrics-exporter-tracing"
+readme = "README.md"
+
+categories = ["development-tools::debugging"]
+keywords = ["metrics", "metrics-core", "exporter", "tracing"]
+
+[dependencies]
+metrics-core = { path = "../metrics-core", version = "^0.5" }
+tracing = "0.1"
+tokio = { version = "0.2", features = ["time"] }
